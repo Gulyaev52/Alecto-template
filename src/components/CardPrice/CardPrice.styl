@@ -1,0 +1,48 @@
+$paddingLeft = 1.7rem
+$paddingRight = 30px
+$paddingTop = 2rem
+$border-bottom-value = 0.4rem
+
+.card-price
+  display flex
+  flex-direction column
+  width 18rem 
+  border-radius $border-bottom-value
+  background-color white
+  box-shadow 0 0 10px 0 gray
+  
+  &__header
+    display flex
+    flex-direction column
+    padding $paddingTop $paddingRight $paddingTop $paddingLeft
+    border-bottom 0.05rem solid rgba(0,0,0,0.1) 
+    
+  &__price    
+    margin-bottom 1rem
+    font-size 3.5rem
+    color #17daa3
+    &:before 
+      content '\0024'  
+      font-size 4rem
+    
+  &__license
+    color #87949e
+    opacity 0.45
+    
+  &__description
+    min-height 14rem
+    padding $paddingTop 2rem $paddingTop $paddingLeft
+    line-height 35px 
+    color #87949e
+    
+  &__button-purchase
+    padding 1.4rem $paddingLeft 
+    text-align left
+    font-size 1rem 
+    border none
+    border-bottom-left-radius $border-bottom-value
+    border-bottom-right-radius $border-bottom-value
+    background-color #17daa3
+    color white
+    text-transform uppercase
+    font-weight bold

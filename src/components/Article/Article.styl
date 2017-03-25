@@ -1,0 +1,38 @@
+.article
+    display flex
+    width 100% 
+    padding 3rem 0 6rem 0
+    flex-direction column
+    justify-content center
+    align-items center
+    background-color #f1f4f6
+
+    &_light
+        background-color white
+        padding-bottom 0
+
+    &__title
+        display flex 
+        height 5rem
+        margin-bottom 2rem
+        flex-direction column
+        align-items center
+        justify-content space-between
+        font-size 3rem 
+        text-transform capitalize
+        color #576671
+
+        &:after
+            content ''
+            display inline-block
+            width 2rem
+            height 0.2rem
+            background-color #17daa3
+
+    &__subtitle
+        margin-bottom 6rem
+        font-size 1rem
+        color #87949e 
+    
+    &__content
+        width 100% 

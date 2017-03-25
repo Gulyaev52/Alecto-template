@@ -1,0 +1,29 @@
+.employee
+  position relative
+  width 21.43rem
+  height @width 
+  
+  &__photo
+    height 100%
+    width 100%
+    
+  &__description
+    display flex
+    position absolute
+    top 0
+    left 0
+    height 100%
+    width 100% 
+    justify-content center
+    align-items center 
+    opacity 0
+    transition all .5s 
+
+    &:hover
+      opacity 1
+      background-color rgba(23, 218, 163, 0.7)
+      
+  &__name
+    font-size 2rem
+    color white 
+    text-transform capitalize

@@ -1,0 +1,72 @@
+line(rotate-deg)
+    content ''
+    position absolute
+    left 0
+    display inline-block
+    width 3rem
+    height 0.1rem    
+    background-color white
+    transform-origin left center
+    transform rotate(rotate-deg) 
+
+.carousel
+  display flex
+  justify-content space-between
+  align-items center
+  width 80rem
+  min-height 15rem 
+  
+  &__gallery 
+    display flex
+    flex-direction column
+    justify-content space-between
+    width 60rem 
+    overflow hidden
+    
+  &__slides
+    display flex
+    padding 0
+    margin 0 
+    width 9999px   
+    list-style none
+    transition margin 0.6s
+    
+  &__slide
+    width 60rem 
+    min-height 8rem
+    
+  &__pagination
+    display flex
+    width 100%
+    justify-content center
+    list-style none
+    margin 0
+    padding 0
+    
+  &__indicator
+    margin-left 0.5rem
+    width 0.4rem
+    height @width
+    border-radius 50%
+    border 0.2rem solid white
+    &_active
+      background-color white
+  
+  &__control  
+    position relative
+    width 3rem
+    height 4rem
+    border none
+    font-size 5rem
+    cursor pointer
+    outline none
+    background none
+    color white 
+    &:before
+      line(-45deg)
+    &:after
+      line(45deg)
+    &_prev
+      transform rotate(0deg)
+    &_next
+      transform rotate(180deg)
