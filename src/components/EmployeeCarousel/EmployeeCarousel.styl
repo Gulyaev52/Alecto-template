@@ -1,0 +1,34 @@
+.employee-carousel
+    display flex
+    justify-content center
+    align-items center
+    width 100% 
+    height 40rem
+    background-image url('./images/fon.png')
+    background-size cover
+
+    &__slide
+        display flex
+        height 17rem
+        flex-direction column
+        align-items center
+        color white
+
+    &__slide-photo
+        width 5rem
+        height @width
+        margin-bottom 1.5rem
+        border-radius 50% 
+
+    &__slide-text
+        margin-bottom 1.5rem
+        font-size 2rem
+
+    &__slide-name
+        margin-right 0.5rem
+        opacity .3
+        text-transform capitalize
+        font-weight bold
+
+    &__slide-profession
+        opacity .6

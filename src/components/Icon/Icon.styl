@@ -1,0 +1,33 @@
+.icon
+    display inline-block
+    width 8.5rem
+    height @width
+    border-radius 50%
+    background-color white
+    color #17daa3
+    background-repeat no-repeat
+    background-position center center
+    background-size 3rem
+
+    &_rocket
+        background-image url('./images/rocket.svg') 
+    
+    &_atom
+        background-image url('./images/atom.svg')
+
+    &_theme
+
+        &_darkness
+            opacity .15
+            background-color #87949e
+
+        &_green
+            background-color #17daa3
+            color white
+
+    &_size 
+
+        &_small
+            width 4.5rem
+            height @width
+            background-size 1.7rem
