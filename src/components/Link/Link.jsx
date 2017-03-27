@@ -2,8 +2,14 @@ import React from 'react';
  
 import './Link.styl';
 
-const Link = ({ text }) => (
-    <a href="#" className="link">{text}</a>
+const Link = ({ text, theme }) => (
+    <a href="#" className={[
+                    'link',
+                    theme ? `link_${theme}` : ''
+                ].join(' ')}
+    >
+        {text}
+    </a>
 );
 
 export default Link;
